@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- ad container 1 -->
+<div class="ad_container" id="slide" style="height: 200px; width: 700px;" >
+
+  
+  
+  <a href="https://orewabeach.co.nz/" target="_blank">
+  <div class="slide_text1" id="slide_text_id" ></div>
+
+  <div class="student_text" id="student_text_id">Benny Tran</br>ID:1538823 </div>
+  <div class="book_now" id="book_now">Book Now!</div>
+
+  <div class="slide0" id="slide0">
+    
+    <img src="images/orewa1.jpg" style="height: 200px; width: 700px;" >
+    
+  </div>
+
+    <div class="slide1" id="slide1">
+        
+        <img src="images/orewa2.jpg" style="height: 200px; width: 700px;" >
+    </div>
+
+    <div class="slide2" id="slide2">
+        
+        <img src="images/orewa4.jpg"  style="height: 200px; width: 700px;">
+        
+    </div>
+
+    <div class="slide3" id="slide3">
+        
+        <img src="images/orewa3.jpg" style="height: 200px; width: 700px;" >
+        
+    </div>
+
+    <div class="slide_stand" id="slide_stand" >
+      
+      
+      <img src="images/orewa3.jpg" style="height: 200px; width: 700px;" >
+    </div>
+  </a>
+</div>
+<!-- end ad container 1 -->
+
+<div id="PDF_link" >
+  <a title="storyboard1" href="storyboard 1.pdf" target="_blank">Storyboard 1</a><br>
+  <a title="storyboard2" href="storyboard 2.pdf" target="_blank">Storyboard 2</a><br>
+  <a title="wireframes" href="wireframes.pdf" target="_blank">Wireframes</a>
+</div>
+
+
+
+<!-- ad container 2 -->
+<div class="ad_container2" id="ad_container2">
+    <div id="ad2_text1">Spinning</div>
+    <div id="ad2_text2">car wheels</div>
+    <div class="student_text2" id="student_text2">Benny Tran</br>ID:1538823</div>
+    <div id="replayButton"><button type="button" class="replayButton" onclick="replay()">Replay</button></div>
+    <div id="ad2_text3"><a style="color: black;" href="https://www.toyota.co.nz/new-car/prius/" target="blank" class="carPage">LEARN MORE</a></div>
+    <div id="car_background"><img src="images/road2.jpg"></div>
+    <div id="car_container">
+      <img src="images/car.png" id="car">
+      <div id="rim_container">
+        <div id="rim1">
+          <img src="images/rim.png" id="wheel1">
+
+        </div>
+        <div id="rim2">
+          <img src="images/rim.png" id="wheel2">
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+
+<!-- booking form -->
+<form class="booking_form" id="booking_form_id">
+  
+  <h2 style="margin-left: 135px;">Online Booking Form</h2><br>
+  
+  <div class="tab" >
+    <p style="font-weight: bold; font-size: 20px;">Reservation Details:</p>
+
+    <label style="font-weight: bold; font-size: 16px;" >Customer Details</label> <br><br>
+
+    <input type="text" id="fName" name="fName" ><br>
+    <label for="fName">First Name</label><br><br>
+
+    <input type="text" id="lName" name="lName" ><br>
+    <label for="lName">Last Name</label><br><br>
+    
+    <input type="date" id="DOB" name="Date Of Birth" ><br>
+    <label for="DOB">Date of Birth</label><br><br>
+
+    <input type="email" id="email" name="email" placeholder="example@gmail.com" ><br>
+    <label for="email">Email</label><br><br>
+
+    <input type="tel" id="phone" name="phone" placeholder="012 345 6789" ><br>
+    <label for="phone" >Phone Number</label><br><br>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <br><br>
+    <div class="color_picker">
+      <label for="color">Favourite Color:</label>
+      <input type="color" id="color" name="color" value="red">
+      
+    </div>
+
+  </div>
+
+  <div class="tab" >
+   
+    <label style="font-weight: bold; font-size: 16px;" >Booking Details</label> <br><br>
+
+    <input min="1" type="number" id="adults" name="adults" placeholder="1"><br>
+    <label for="adults">Number of Adults</label><br><br>
+    
+    <input min="0" type="number" id="children" name="children" placeholder="0"><br>
+    <label for="children">Number of Children</label><br><br>
+                
+    <input type="date" id="checkIn" name="Check In Date" ><br>
+    <label for="checkIn">Check In Date</label><br><br>
+
+    <input type="date" id="checkOut" name="Check Out Date" ><br>
+    <label for="checkOut">Check Out Date</label><br><br>
+    
+    <select id="roomType" name="Room Type" style="width: 100%;">
+      <option value="Standard">Standard Room (1 to 2 people)</option>
+      <option value="Family">Family Room (1 to 4 people)</option>
+      <option value="Deluxe">Deluxe Room (1 to 6 people)</option>
+    </select><br>
+    <label for="roomType">Room Type</label><br><br>
+
+
+    <div class="radio_button2">
+      <label for="goggles">Swimming Goggles </label>
+      <input id="goggles" type="radio" value="goggles" name="gender"><br>
+    </div>
+
+    <br><div class="radio_button3">
+      <label for="surfBoard">Surf Board </label>
+      <input id="surfBoard" type="radio" value="surfBoard" name="surfBoard">
+    </div><br>
+
+    <div class="range">
+      <label for="quantity">Quantity (max 10/room)</label>
+      <input type="range" id="quantity" name="quantity" min="0" max="10">
+    </div>
+    
+    <br><div class="radio_button4">
+      <label for="agreement">I agree with the local native conservation initiative agreement </label>
+      <input id="agreement" type="radio" value="agreement" name="agreement">
+    </div>
+  </div>
+
+  <div class="tab">
+    <br> <br> <br>
+    <label style="font-weight: bold; font-size: 16px;" >Payment Details</label> <br><br>
+    
+    <input type="number" id="cardNumber" name="card number" placeholder="0000 0000 0000 0000" maxlength="16">
+    <label for="cardNumber">Card Number</label><br><br>
+
+    <input type="text" id="expiry" name="expiry" placeholder="MM/YY">
+    <label for="expiry">Expiry</label><br><br>
+
+    <input type="text" id="cardName" name="Card Name" placeholder="CARDHOLDER">
+    <label for="card name">Name on Card</label><br><br>
+        
+    <input type="tel" id="cvv" name="cvv" maxlength="3" placeholder="000">
+    <label for="cvv">CVV</label><br><br>
+
+    <div class="radio_button5">
+      <label for="TnC">I agree to the Terms and Conditions</label>
+      <input type="checkbox" id="TnC" name="TnC" value="Agreed">            
+    </div>
+    <br>
+    <div class="radio_button6">
+      <label for="TnC2">I authorize ABC Company to charge my credit card for the authorized amount. I understand that my information will be saved to file for future transactions on my account.</label>
+      <input type="checkbox" id="TnC2" name="TnC2" value="Agreed2">            
+    </div>           
+  </div>
+
+  <div class="tab">
+    <label style="font-weight: bold; font-size: 16px;" >Submission Details</label> <br><br>
+  
+    <!-- First Page -  customer details -->
+    <label for="sFName">First Name:</label>
+    <div id="sFName"></div>
+
+    <label for="sLName">Last Name:</label>
+    <div id="sLName"></div>
+
+    <label for="sDOB">Date Of Birth:</label>
+    <div id="sDOB"></div>
+
+    <label for="sEmail">Email:</label>
+    <div id="sEmail"></div>
+  
+    <label for="sPhone">Phone:</label>
+    <div id="sPhone"></div>
+
+    <label for="sGender">Gender:</label>
+    <div id="sGender"></div>
+
+    <label for="sColor">Favourite Color:</label>
+    <div id="sColor"></div>
+
+    <!-- Second Page - Booking details -->
+    <label for="sAdult">Adult(s)</label>
+    <div id="sAdult"></div>
+
+    <label for="sChildren">Children</label>
+    <div id="sChildren"></div>
+
+    <label for="sCheckIn">Check-in date:</label>
+    <div id="sCheckIn"></div>
+
+    <label for="sCheckOut">Check-out date:</label>
+    <div id="sCheckOut"></div>
+
+    <label for="sRoomType">Room Type:</label>
+    <div id="sRoomType"></div>
+
+    <label for="sGoggles">Swimming Goggles:</label>
+    <div id="sGoggles"></div>
+
+    <label for="sSurfBoard">Surf Board:</label>
+    <div id="sSurfBoard"></div>
+
+    <label for="sQuantity">Surf Board Quantity:</label>
+    <div id="sQuantity"></div>
+
+    <label for="sAgreement">local native conservation initiative agreement:</label>
+    <div id="sAgreement"></div>
+
+    <!-- Third Page - Payment Details -->
+    <label for="sCardNumber">Card Numeber:</label>
+    <div id="sCardNumber"></div>
+
+    <label for="sExpiry">Expiry Date:</label>
+    <div id="sExpiry"></div>
+
+    <label for="sCardName">Name on Card:</label>
+    <div id="sCardName"></div>
+
+    <label for="sCVV">CVV:</label>
+    <div id="sCVV"></div>
+
+    <label for="sTnC">Terms and Conditions:</label>
+    <div id="sTnC"></div>
+
+    <label for="sTnC2">Credit Card Terms and Conditions:</label>
+    <div dir="sTnC2"></div>
+  </div>
+
+  <!-- Buttons -->
+  <div style="overflow:auto;">
+      <div style="float:right;">
+          <button type="button" id="prevPage" onclick="nextPrev(-1)">Back</button>
+          <button type="button" id="nextPage" onclick="nextPrev(1)">Next</button>
+      </div>
+  </div>
+  
+  
+  <!-- page tracking dots -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="tracking"></span>
+    <span class="tracking"></span>
+    <span class="tracking"></span>
+    <span class="tracking"></span>
+  </div>
+
+
+
+  
+</form>
+<!-- end booking form -->
+
+
+
+    
+
+
+
+
+
+
+<script>
+  var currentTab = 0;
+  showTab(currentTab);
+  function showTab(n) {
+    
+    var x = document.getElementsByClassName("tab");
+    x[n].style.display = "block";
+    
+    if (n == 0) {
+      document.getElementById("prevPage").style.display = "none";
+    } else {
+      document.getElementById("prevPage").style.display = "inline";
+    }
+
+   
+     if (n == (x.length - 1)) {
+      document.getElementById("nextPage").style.display = "none";
+      userInput();
+    } else {
+      document.getElementById("nextPage").style.display = "inline";
+      document.getElementById("nextPage").innerHTML = "Next";
+      
+    }
+    if (n ==(x.length - 2)){
+      document.getElementById("nextPage").style.display = "inline";
+      document.getElementById("nextPage").innerHTML = "Submit";
+
+    }
+    
+    
+    fixStepIndicator(n)
+  }
+
+  function nextPrev(n) {
+    var x = document.getElementsByClassName("tab");
+    if (n == 1 && !validateForm()) return false;
+    x[currentTab].style.display = "none";
+    currentTab = currentTab + n;
+    if (currentTab >= x.length) {
+      document.getElementById("booking_form_id").submit();
+      return false;
+    }
+    showTab(currentTab);
+  }
+
+  function validateForm() {
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+    //loop that check every input field
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false:
+      valid = false;
+    }
+  }
+  // this ensure all field have input
+  if (valid) {
+    document.getElementsByClassName("tracking")[currentTab].className += " finish";
+  }
+  return valid; 
+}
+
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("tracking");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  x[n].className += " active";
+}
+
+
+
+function userInput(){
+
+  // first page - Customer Details
+  document.getElementById("sFName").innerHTML = document.getElementById("fName").value;
+  document.getElementById("sLName").innerHTML = document.getElementById("lName").value;
+  document.getElementById("sDOB").innerHTML = document.getElementById("DOB").value;
+  document.getElementById("sEmail").innerHTML = document.getElementById("email").value;
+  document.getElementById("sLName").innerHTML = document.getElementById("phone").value;
+  
+
+
+  document.getElementById("sGender").innerHTML = document.getElementById("gender").value
+  
+  document.getElementById("sColor").innerHTML = document.getElementById("color").value;
+ 
+  
+  // second page - booking details
+  document.getElementById("sAdult").innerHTML = document.getElementById("adults").value;
+  document.getElementById("sChildren").innerHTML = document.getElementById("children").value;
+  document.getElementById("sCheckIn").innerHTML = document.getElementById("checkIn").value;
+  document.getElementById("sCheckOut").innerHTML = document.getElementById("checkOut").value;
+  document.getElementById("sRoomType").innerHTML = document.getElementById("roomType").value;
+  document.getElementById("sGoggles").innerHTML = document.getElementById("goggles").checked;
+  document.getElementById("sSurfBoard").innerHTML = document.getElementById("surfBoard").checked;
+  document.getElementById("sQuantity").innerHTML = document.getElementById("quantity").value;
+  document.getElementById("sAgreement").innerHTML = document.getElementById("agreement").checked;
+
+  // third page - payment details
+
+  document.getElementById("sCardNumber").innerHTML = document.getElementById("cardNumber").value;
+  document.getElementById("sExpiry").innerHTML = document.getElementById("expiry").value;
+  document.getElementById("sCardName").innerHTML = document.getElementById("cardName").value;
+  document.getElementById("sCVV").innerHTML = document.getElementById("cvv").value;
+  document.getElementById("sTnC").innerHTML = document.getElementById("TnC").checked;
+  document.getElementById("sTnC2").innerHTML = document.getElementById("TnC2").checked;
+
+}
+function replay() {
+  var el;
+  el = document.getElementById("car_container");
+  el.style.animation = 'none';
+  el.offsetWidth; 
+  el.style.animation = null; 
+
+  el = document.getElementById('rim1');
+  el.style.animation = 'none';
+  el.offsetHeight; 
+  el.style.animation = null; 
+
+  el=document.getElementById('rim2');
+  el.style.animation = 'none';
+  el.offsetHeight; 
+  el.style.animation = null; 
+
+  el=document.getElementById('ad2_text1');
+  el.style.animation = 'none';
+  el.offsetHeight; 
+  el.style.animation = null; 
+
+  el=document.getElementById('ad2_text2');
+  el.style.animation = 'none';
+  el.offsetHeight; 
+  el.style.animation = null; 
+
+  el=document.getElementById('ad2_text3');
+  el.style.animation = 'none';
+  el.offsetHeight; 
+  el.style.animation = null; 
+
+  el=document.getElementById('student_text2');
+  el.style.animation = 'none';
+  el.offsetHeight; 
+  el.style.animation = null;
+}
+</script>
+
+</body>
+</html> 
